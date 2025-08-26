@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sueño - Gráfico de Barras</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, sans-serif;
+            background: #f0f8ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        h1 {
+            color: #1e40af;
+        }
+        .bars rect {
+            fill: steelblue;
+            rx: 8;
+            ry: 8;
+        }
+        .bars rect:hover {
+            fill: #3b82f6;
+        }
+        .labels text {
+            font-size: 12px;
+            fill: #1e3a8a;
+            alignment-baseline: middle;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mi Sueño</h1>
+    <svg width="700" height="400">
+        <g class="labels"></g>
+        <g class="bars" transform="translate(150,20)"></g>
+    </svg>
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
+Open with Live Server
+<!-- Extensión Live Server para ver el gráfico -->
